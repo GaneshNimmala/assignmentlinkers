@@ -1,0 +1,108 @@
+/* Add your custom styles here if needed */
+
+/* First Navbar */
+.navbar-first {
+  background-color: #e9ecef; /* Change the background color as needed */
+}
+
+.navbar-first .navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-first .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-first .form-inline {
+  display: flex;
+  align-items: center;
+}
+
+/* Second Navbar */
+.navbar-second {
+  background-color: #e9ecef; /* Change the background color as needed */
+}
+
+.nav-hover:hover {
+  color: #28a745; /* Bootstrap success color */
+  background-color: #fff;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: all 0.9s ease;
+}
+
+#hero {
+  background-image: url("../images/9760493.jpg");
+  /* Adjust background size and other properties as needed */
+  background-size: cover;
+  background-position: center;
+  /* Set a fixed height for your hero section */
+  height: 700px;
+  /* Additional styling for text and content within the hero section */
+  color: #2655a5;
+  opacity: 0.8;
+  text-align: center;
+  padding: 100px 20px; /* Adjust padding as needed */
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Form Container Styles */
+.form-container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Set a slightly transparent white background */
+  border-radius: 15px; /* Set border radius */
+  border: 1px solid #3a4d7c; /* Set border color */
+  box-shadow: 0 4px 8px rgba(58, 77, 124, 0.2); /* Set shadow effect */
+  padding: 20px; /* Add padding to the form container */
+}
+
+/*background-color: E5E6E4;*/
+
+.main {
+  background-color: #f8f8f8; /* Set background color for the main section */
+  padding: 40px;
+}
+
+/* Logos Container Styles */
+.logos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo Styles */
+.logo {
+  width: 100px; /* Set the width of each logo */
+  height: auto;
+  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Hover Effect for Logos */
+.logo:hover {
+  transform: translateY(
+    -15px
+  ); /* Adjust the translateY value for the desired upward movement */
+}
+
+/* Trusted By Content Styles */
+.trusted-by {
+  font-size: 30px;
+  margin-right: 20px;
+  font-style: oblique;
+  font-family: "Times New Roman", Times, serif;
+  color: #236328;
+  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Additional Style for Zoom Effect when Active */
+.trusted-by.active {
+  transform: scale(1.2); /* Adjust the scale value for the desired zoom level */
+}
