@@ -18,3 +18,8 @@ window.addEventListener("scroll", handleScroll);
 
 // Initial check for scroll position on page load
 handleScroll();
+
+function scrollCards(direction) {
+  var cardContainer = document.getElementById("cardCarousel");
+  cardContainer.scrollLeft += direction * 200; // Adjust the scroll distance as needed
+}

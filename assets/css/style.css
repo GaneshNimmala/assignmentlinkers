@@ -33,9 +33,14 @@
   padding: 5px 10px;
   transition: all 0.9s ease;
 }
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  background-color: rgba(188, 196, 196, 0.295);
+}
 
 #hero {
-  background-image: url("../images/9760493.jpg");
+  background-image: url("../images/main-banner.jpg");
   /* Adjust background size and other properties as needed */
   background-size: cover;
   background-position: center;
@@ -47,15 +52,17 @@
   text-align: center;
   padding: 100px 20px; /* Adjust padding as needed */
   font-family: "Times New Roman", Times, serif;
+  font-weight: 550;
+  font-style: unset;
 }
 
 /* Form Container Styles */
 .form-container {
   background-color: rgba(
-    255,
-    255,
-    255,
-    0.6
+    165,
+    165,
+    165,
+    0.224
   ); /* Set a slightly transparent white background */
   border-radius: 15px; /* Set border radius */
   border: 1px solid #3a4d7c; /* Set border color */
@@ -69,7 +76,11 @@
   background-color: #f8f8f8; /* Set background color for the main section */
   padding: 40px;
 }
-
+.containerfor-univ-logo {
+  padding: 20px;
+  margin: 30px;
+  margin-bottom: 0px;
+}
 /* Logos Container Styles */
 .logos-container {
   display: flex;
@@ -98,11 +109,124 @@
   margin-right: 20px;
   font-style: oblique;
   font-family: "Times New Roman", Times, serif;
-  color: #236328;
+  color: #dc7017;
   transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
 }
 
 /* Additional Style for Zoom Effect when Active */
 .trusted-by.active {
-  transform: scale(1.2); /* Adjust the scale value for the desired zoom level */
+  transform: scale(1.1); /* Adjust the scale value for the desired zoom level */
+}
+
+/* Container for About Us with shadow and hover effect */
+/* .container-for-aboutus {
+  margin-top: 50px; 
+  padding: 40px;
+  box-shadow: 0 4px 8px #2c539a; 
+  transition: transform 0.3s ease-in-out; 
+  border-radius: 25px;
+  background-image: url(../images/v915-techi-020.jpg);
+  background-size: cover;
+  background-position: left;
+} */
+
+/* Hover effect when scrolling */
+.container-for-aboutus:hover {
+  outline: none; /* Remove default focus outline */
+  transform: scale(1.02); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Centering the container */
+.center-container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* About Us section styles */
+.about-us-text {
+  text-align: justify;
+}
+.about-section {
+  text-align: center;
+  font-size: large;
+}
+.about-us-heading {
+  position: relative;
+}
+
+.about-us-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #ff9e0cde;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Adjust styling as needed */
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-20%);
+  font-size: 24px;
+  color: black;
+  z-index: -1;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+.card-container {
+  display: flex;
+  overflow-x: auto;
+}
+.card {
+  width: 50rem; /* Adjust the width as needed */
+}
+
+.help-subjects-container {
+  padding: 20px;
+  margin-top: 0px;
+  background-image: url(../images/268_Organic_White_Background.jpg);
+  background-size: cover;
+}
+.help-subjects-container .row {
+  display: flex; /* Ensure cards are displayed side-by-side */
+  flex-wrap: wrap; /* Allow cards to wrap onto multiple lines on smaller screens */
+}
+
+.help-subjects-container .col-12 {
+  margin-bottom: 15px; /* Add bottom margin to create spacing between cards */
+}
+
+.help-subjects-container .card {
+  width: 100%; /* Ensure cards take full width on smaller screens */
+  margin-right: 10px; /* Add right margin to create horizontal spacing */
+}
+
+@media (min-width: 768px) {
+  /* Adjust layout for medium and larger screens */
+  .help-subjects-container .col-md-5 {
+    width: 50%; /* Make each card take up half the width */
+    margin-right: 0; /* Remove the right margin on larger screens */
+  }
+}
+.text-help-subject {
+  font-family: "Times New Roman", Times, serif;
+  font-style: unset;
+  font-size: 23px;
+  text-align: center;
+  color: black;
+  font-weight: semi-bold;
+  margin: 20px;
 }
