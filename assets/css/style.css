@@ -23,6 +23,9 @@
 /* Second Navbar */
 .navbar-second {
   background-color: #e9ecef; /* Change the background color as needed */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .nav-hover:hover {
@@ -47,13 +50,13 @@ body {
   /* Set a fixed height for your hero section */
   height: 700px;
   /* Additional styling for text and content within the hero section */
-  color: #2655a5;
+  color: #080808;
   opacity: 0.8;
   text-align: center;
   padding: 100px 20px; /* Adjust padding as needed */
   font-family: "Times New Roman", Times, serif;
+
   font-weight: 550;
-  font-style: unset;
 }
 
 /* Form Container Styles */
@@ -65,7 +68,7 @@ body {
     0.224
   ); /* Set a slightly transparent white background */
   border-radius: 15px; /* Set border radius */
-  border: 1px solid #3a4d7c; /* Set border color */
+  /*border: 1px solid #3a4d7c; /* Set border color */
   box-shadow: 0 4px 8px rgba(58, 77, 124, 0.2); /* Set shadow effect */
   padding: 20px; /* Add padding to the form container */
 }
@@ -107,15 +110,19 @@ body {
 .trusted-by {
   font-size: 30px;
   margin-right: 20px;
-  font-style: oblique;
+
   font-family: "Times New Roman", Times, serif;
+  font-family: "Montserrat", sans-serif;
   color: #dc7017;
+  color: #ffc107;
   transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
 }
 
 /* Additional Style for Zoom Effect when Active */
 .trusted-by.active {
-  transform: scale(1.1); /* Adjust the scale value for the desired zoom level */
+  transform: scale(
+    1.04
+  ); /* Adjust the scale value for the desired zoom level */
 }
 
 /* Container for About Us with shadow and hover effect */
@@ -149,7 +156,7 @@ body {
 }
 .about-section {
   text-align: center;
-  font-size: large;
+  font-size: 20px;
 }
 .about-us-heading {
   position: relative;
@@ -229,4 +236,351 @@ body {
   color: black;
   font-weight: semi-bold;
   margin: 20px;
+}
+.half-oven {
+  width: 50%;
+}
+
+.why-us {
+  padding: 20px;
+  margin-top: 0px;
+  background-image: url(../images/268_Organic_White_Background.jpg);
+  background-size: cover;
+}
+.why-us .row {
+  display: flex; /* Ensure cards are displayed side-by-side */
+  flex-wrap: wrap; /* Allow cards to wrap onto multiple lines on smaller screens */
+}
+
+.why-us .col-12 {
+  margin-bottom: 15px; /* Add bottom margin to create spacing between cards */
+}
+
+.why-us .card {
+  width: 100%; /* Ensure cards take full width on smaller screens */
+  margin-right: 10px; /* Add right margin to create horizontal spacing */
+}
+
+@media (min-width: 768px) {
+  /* Adjust layout for medium and larger screens */
+  .why-us .col-md-5 {
+    width: 50%; /* Make each card take up half the width */
+    margin-right: 0; /* Remove the right margin on larger screens */
+  }
+}
+
+.text-why-us {
+  font-family: "Times New Roman", Times, serif;
+  font-style: unset;
+  font-size: 23px;
+  text-align: center;
+  color: black;
+  font-weight: semi-bold;
+  margin: 20px;
+}
+
+.text-help-subject {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.text-help-subject::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  background-color: #ff9e0cde;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.intense-shadow {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adjust the values as needed */
+}
+
+.card-with-strip {
+  position: relative;
+}
+
+.colored-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px; /* Adjust the width as needed */
+  height: 100%;
+  background-color: #007bff7a; /* Specify the desired color */
+}
+
+.why-us-heading {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.why-us-heading::after {
+  content: "";
+  display: block;
+  width: 220px;
+  height: 2px;
+  background-color: #ff9e0cde;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info {
+  border-top: 3px solid #47b2e4;
+  border-bottom: 3px solid #47b2e4;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #47b2e4;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #e7f5fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37517e;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6182ba;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #47b2e4;
+  color: #fff;
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-us-heading {
+  font-family: "Times New Roman", Times, serif;
+  font-style: unset;
+  font-size: 23px;
+  text-align: center;
+  color: black;
+  font-weight: semi-bold;
+  margin: 20px;
+}
+
+.contact-us-heading {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.contact-us-heading::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #ff9e0cde;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  font-size: 14px;
+  background: #ffffff;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+#footer .footer-top .footer-contact h3 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #37517e;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Jost", sans-serif;
+  color: #5e5e5e;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #37517e;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #47b2e4;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #47b2e4;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #47b2e4;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #209dd8;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #5c6161;
+}
+
+#footer .copyright {
+  float: left;
+}
+
+#footer .credits {
+  float: right;
+  font-size: 13px;
+}
+
+#footer .credits a {
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  #footer .footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #footer .copyright,
+  #footer .credits {
+    text-align: center;
+    float: none;
+  }
+
+  #footer .credits {
+    padding-top: 4px;
+  }
 }

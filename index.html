@@ -19,6 +19,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
+
     <!-- custom css in external file -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -52,13 +55,13 @@
           <ul class="navbar-nav ml-auto">
             <!-- Navigation Links -->
             <li class="nav-item ml-2">
-              <a class="nav-link nav-hover" href="#">Service</a>
+              <a class="nav-link nav-hover" href="#About">About Us</a>
             </li>
             <li class="nav-item ml-2">
-              <a class="nav-link nav-hover" href="#">About</a>
+              <a class="nav-link nav-hover" href="#Services">Services</a>
             </li>
             <li class="nav-item ml-2">
-              <a class="nav-link nav-hover" href="#">Contact</a>
+              <a class="nav-link nav-hover" href="#Contact">Contact us</a>
             </li>
             <li class="nav-item ml-2">
               <a class="nav-link nav-hover" href="#">Help</a>
@@ -112,28 +115,41 @@
               <form>
                 <div class="row">
                   <div class="row">
-                    <p style="color: black" class="h5">
+                    <p
+                      style="
+                        color: #2655a5;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-family: 'Roboto', sans-serif;
+
+                        font-size: 20px;
+                      "
+                    >
                       <span
                         >Elevate Your Grades with Our No.1 Premium Writing
                         Services
                       </span>
-                      <br />
-                      <span style="color: #37985c"
-                        >-Ensuring your success!</span
+
+                      <span
+                        style="
+                          color: #4caf50;
+                          font-family: 'Montserrat', sans-serif;
+                        "
+                        >- Ensuring your success!</span
                       >
                     </p>
                   </div>
                   <div class="col-6">
-                    <div class="mb-5">
-                      <label for="name" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="name" />
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Name"
+                      />
                     </div>
                     <div class="mb-3">
-                      <label for="Subject" class="form-label"
-                        >Choose a Subject</label
-                      >
                       <select name="subject" id="subject" class="form-control">
-                        <option value="#"></option>
+                        <option value="#">Choose a Subject</option>
                         <option value="Accounting">Accounting</option>
                         <option value="Management">Management</option>
                         <option value="Law">Law</option>
@@ -147,45 +163,57 @@
                       </select>
                     </div>
                     <div class="mb-3">
-                      <label for="name" class="form-label">Wordcount</label>
-                      <input type="number" class="form-control" id="name" />
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="name"
+                        placeholder="Wordcount"
+                      />
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="mb-4">
-                      <label for="email" class="form-label"
-                        >Email address</label
-                      >
+                    <div class="mb-3">
                       <input
                         type="email"
                         class="form-control"
                         id="email"
-                        aria-describedby="emailHelp"
+                        placeholder="Email address"
                       />
-                      <div id="emailHelp" class="form-text">
-                        We'll never share your email with anyone else.
-                      </div>
                     </div>
                     <div class="mb-3">
-                      <label for="name" class="form-label">Deadline</label>
-                      <input type="date" class="form-control" id="name" />
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="name"
+                        placeholder="Deadline"
+                      />
                     </div>
 
                     <div class="mb-3">
-                      <label for="name" class="form-label">Country Code</label>
-                      <input type="text" class="form-control" id="name" />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Country Code"
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="mb-3">
-                  <label for="name" class="form-label">University</label>
-                  <input type="text" class="form-control" id="name" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="University"
+                  />
                 </div>
                 <div class="mb-3">
-                  <label for="name" class="form-label"
-                    >Assignment Description</label
-                  >
-                  <input type="text" class="form-control" id="name" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Assignment Description"
+                  />
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -237,7 +265,7 @@
 
     <!-- ======= main Section ======= -->
     <main class="main">
-      <div class="container-for-aboutus mt-10">
+      <div class="container-for-aboutus mt-10" id="About">
         <div class="row">
           <div class="col-lg-5">
             <img
@@ -249,29 +277,19 @@
             <div class="about-section">
               <h2 class="about-us-heading">About Us</h2>
               <div class="about-us-text">
-                <span>Welcome to Assignment Helper </span>– Your Ultimate
-                Academic Support Platform At Assignment Helper, we take pride in
-                being your go-to destination for comprehensive solutions to all
-                your university assignments. Our mission is to empower students,
-                helping them not only complete their assignments but also
-                understand and master the subject matter, ultimately leading to
-                success in their exams. Dive into a world where academic
-                challenges are met with confidence. Our platform boasts a team
-                of experts spanning across diverse fields, ensuring that we have
-                the right expertise to assist you with assignments from any
-                university course. From mathematics to literature, science to
-                humanities, we've got you covered. Unmatched Quality: We
-                understand the importance of delivering high-quality solutions.
-                Our experts are not just academically qualified, but they are
-                also experienced professionals in their respective fields. This
-                guarantees that the solutions provided are not only accurate but
-                also reflect a deep understanding of the subject matter.
-                Comprehensive Assistance: We go beyond mere assignment
-                completion. Our platform is designed to provide comprehensive
-                assistance, offering insights and explanations that aid in
-                enhancing your understanding of the topics. This holistic
-                approach is geared towards preparing you not just for
-                assignments but for success in your examinations.
+                We stand out as a leading global service provider, offering
+                distinctive and high-quality online assignment help services.
+                Recognizing that education plays a pivotal role in every
+                student's life, our vision is centred on making their efforts
+                more effective and conducive to their development. Our
+                commitment is to deliver top-notch and informative academic
+                writing services, alleviating the stress and academic workload
+                of our peers. <br /><br />Continuously evolving, we are actively
+                engaged in developing diverse platforms aimed at enhancing
+                students' knowledge and refining their writing skills. Our team
+                comprises dedicated and enthusiastic assignment helpers,
+                committed to providing effective assistance to enable every
+                student to navigate through challenging assignment writing.
               </div>
               <!-- Add more content as needed -->
             </div>
@@ -377,74 +395,276 @@
           </a>
         </div>
       </div> -->
-    <section>
-      <div class="help-subjects-container mt-5" style="margin-top: 0px">
-        <div class="text-help-subject">
-          Online Assignment Help For A Wide Range of Subjects
+
+    <section class="why-us">
+      <div class="why-us-heading">What Makes Us Awesome</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="./assets/logos/whyus-logo's/time_1046723.png"
+                    class="card-img-top"
+                    alt=""
+                    style="
+                      width: 50px;
+                      margin: 15px 0px 0px 10px;
+                      border-radius: 50px;
+                    "
+                  />
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      24x7 Academic Writers’ Assistance
+                    </h5>
+                    <p class="card-text">
+                      We provide around-the-clock support from our team of
+                      academic writers, ensuring timely assistance whenever
+                      needed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="colored-strip"></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="colored-strip"></div>
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="./assets/logos/whyus-logo's/affordable_6694649.png"
+                    class="card-img-top"
+                    alt=""
+                    style="
+                      width: 50px;
+                      margin: 15px 0px 0px 10px;
+                      border-radius: 50px;
+                    "
+                  />
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Affordable Hiring Range for Assignment Helpers
+                    </h5>
+                    <p class="card-text">
+                      We offer an affordable range for hiring assignment
+                      helpers, making our services accessible to a wide range of
+                      students.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="colored-strip"></div>
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="./assets/logos/whyus-logo's/knowledge_13579176.png"
+                    class="card-img-top"
+                    alt=""
+                    style="
+                      width: 50px;
+                      margin: 15px 0px 0px 10px;
+                      border-radius: 50px;
+                    "
+                  />
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Experienced & Knowledgeable Assignment Writers
+                    </h5>
+                    <p class="card-text">
+                      Our team consists of seasoned and knowledgeable assignment
+                      writers, ensuring expertise in diverse subjects and
+                      topics.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card">
+              <div class="colored-strip"></div>
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="./assets/logos/whyus-logo's/marketing_10675195.png"
+                    class="card-img-top"
+                    alt=""
+                    style="
+                      width: 50px;
+                      margin: 15px 0px 0px 10px;
+                      border-radius: 50px;
+                    "
+                  />
+                </div>
+                <div class="col-10">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      A+ Quality and Plagiarism-Free Academic Papers
+                    </h5>
+                    <p class="card-text">
+                      We are committed to delivering academic papers of A+
+                      quality, crafted meticulously and free from plagiarism.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="help-subjects-container mt-5" style="margin-top: 0px" id="Services">
+        <div class="text-help-subject">Services We Offer</div>
         <div class="row">
           <div class="col-12 col-md-4 col-sm-6">
             <div class="card">
-              <img src="..." class="card-img-top" alt="Card Image" />
+              <img
+                src="./assets/logos/services/coursework.jpg"
+                class="card-img-top"
+                alt="Card Image"
+              />
               <div class="card-body">
+                <h4 class="card-title">Coursework Help</h4>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Excel in coursework with our expert help - precision,
+                  originality, and personalized support for academic success.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6">
             <div class="card">
-              <img src="..." class="card-img-top" alt="Card Image" />
+              <img
+                src="./assets/logos/services/essay help.jpg"
+                class="card-img-top"
+                alt="Card Image"
+              />
               <div class="card-body">
+                <h4 class="card-title">Essay Help</h4>
+
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Craft exceptional essays with our expert Essay Help -
+                  precision, originality, and personalized support for academic
+                  excellence.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6">
             <div class="card">
-              <img src="..." class="card-img-top" alt="Card Image" />
+              <img
+                src="./assets/logos/services/thesis.jpeg"
+                class="card-img-top"
+                alt="Card Image"
+                height="260px"
+              />
               <div class="card-body">
+                <h4 class="card-title">Thesis Help</h4>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Refine your thesis with expert help—precision, originality,
+                  and personalized support for academic excellence. Elevate your
+                  research.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6">
             <div class="card">
-              <img src="..." class="card-img-top" alt="Card Image" />
+              <img
+                src="./assets/logos/services/casestudy.jpg"
+                class="card-img-top"
+                alt="Card Image"
+                height="260px"
+              />
               <div class="card-body">
+                <h4 class="card-title">Case Study Help</h4>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Master case studies with expert help—precision, originality,
+                  and personalized support for academic excellence. Elevate your
+                  analysis
                 </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6">
             <div class="card">
-              <img src="..." class="card-img-top" alt="Card Image" />
+              <img
+                src="./assets/logos/services/citation referencing.jpg"
+                class="card-img-top"
+                alt="Card Image"
+              />
               <div class="card-body">
+                <h4 class="card-title">Referencing Style Help</h4>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Navigate referencing styles with ease. Our expert guidance
+                  ensures accuracy and adherence to academic citation norms
                 </p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6">
             <div class="card">
-              <img src="..." class="card-img-top" alt="Card Image" />
+              <img
+                src="./assets/logos/services/proofreading.jpg"
+                class="card-img-top"
+                alt="Card Image"
+              />
               <div class="card-body">
+                <h4 class="card-title">Proofreading Services</h4>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Elevate your written work with our Proofreading Services. Our
+                  meticulous editors ensure clarity, accuracy, and polished
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6">
+            <div class="card">
+              <img
+                src="./assets/logos/services/rewriting.jpg"
+                class="card-img-top"
+                alt="Card Image"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Rewrite Services</h4>
+                <p class="card-text">
+                  Transform your content with our Rewrite Services. Our skilled
+                  writers enhance clarity and effectiveness for impactful
+                  communication.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6">
+            <div class="card">
+              <img
+                src="./assets/logos/services/assessment-analysics-audit-control-review-concept.jpg"
+                class="card-img-top"
+                alt="Card Image"
+                
+              />
+              <div class="card-body">
+                <h4 class="card-title">Assessment Help</h4>
+                <p class="card-text">
+                  Excel in your assessments with our expert Assessment Help.
+                  Receive tailored guidance, clarity, and support for academic
+                  success.
                 </p>
               </div>
             </div>
@@ -453,7 +673,212 @@
       </div>
     </section>
 
-    <div class="Services"></div>
+          <!-- ======= Contact Section ======= -->
+          <section id="Contact" class="contact">
+            <div class="container" data-aos="fade-up">
+              <div class="section-title">
+                <div class="contact-us-heading">Get in Touch</div>
+                <p>
+                  We value your input and look forward to connecting with you. Feel free to reach out for any inquiries, feedback, or collaborations. Our team is here to assist you on your journey to success. 
+                </p>
+              </div>
+    
+              <div class="row">
+                <div class="col-lg-5 d-flex align-items-stretch">
+                  <div class="info">
+                    <div class="address">
+                      <i class="bi bi-geo-alt"></i>
+                      <h4>Location:</h4>
+                      <p>Assignment Linkers</p>
+                    </div>
+    
+                    <div class="email">
+                      <i class="bi bi-envelope"></i>
+                      <h4>Email:</h4>
+                      <p>info@assignmentlinkers.com</p>
+                    </div>
+    
+                    <div class="phone">
+                      <i class="bi bi-phone"></i>
+                      <h4>Call:</h4>
+                      <p>+91 1234567890</p>
+                    </div>
+    
+                   
+                    <iframe
+                      src="https://www.google.com/maps/embed/v1/place?q=india&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                      frameborder="0"
+                      style="border: 0; width: 100%; height: 290px"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+    
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                  <form
+                    action="forms/contact.php"
+                    method="post"
+                    role="form"
+                    class="php-email-form"
+                  >
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label for="name">Your Name</label>
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control"
+                          id="name"
+                          required
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="name">Your Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          id="email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Subject</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="subject"
+                        id="subject"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Message</label>
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="10"
+                        required
+                      ></textarea>
+                    </div>
+                   <!-- <div class="my-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">
+                        Your message has been sent. Thank you!
+                      </div>
+                    </div>-->
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-outline-success mt-5">Send Message</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Contact Section -->
+        </main>
+        <!-- End #main -->
+    
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 footer-contact">
+                  <h3><img src="./assets/images/assignment-linkers-logo.png" alt="" style="height: 100px;"></h3>
+                  <p>
+                    123 Main Street
+                    Cityville, State
+                    Country
+                    ZIP Code: 12345<br/>                    
+                    <strong>Phone:</strong> +91 1234567890<br />
+                    <strong>Email:</strong> info@.com<br />
+                  </p>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="#">Terms of service</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="#">Privacy policy</a>
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Our Services</h4>
+                  <ul>
+                    <li>
+                      <i class="bx bx-chevron-right"></i> <a href="#">Coursework Help</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="#">Essay Help</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="#">Thesis Help</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i> <a href="#">Case Study Help</a>
+                    </li>
+                    <li>
+                      <i class="bx bx-chevron-right"></i>
+                      <a href="#">Referencing Style Help</a>
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Our Social Networks</h4>
+                  <p>
+                    Follow us on social media to stay updated on the latest news, events, and exciting developments.
+                  </p>
+                  <div class="social-links mt-3">
+                    <a href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="instagram"
+                      ><i class="bi bi-instagram"></i
+                    ></a>
+                    <a href="https://www.youtube.com/channel/" class="google-plus"><i class="bi bi-youtube"></i></a>
+                    <a href="https://www.pinterest.com/" class="linkedin"><i class="bi bi-pinterest"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="container footer-bottom clearfix">
+            <div class="copyright">
+              &copy; Copyright <strong><span>Assignment Linkers</span></strong
+              >. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+              Designed by <a href="https://ibharatmedia.com/">I Bharat Media</a>
+            </div>
+          </div>
+        </footer>
+        <!-- End Footer -->
 
     <!-- ======= main Section end======= -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
