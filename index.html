@@ -19,15 +19,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
     <!-- custom css in external file -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Navbar Links and Search Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-second">
+    <nav class="navbar navbar-expand-lg navbar-second">
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
@@ -109,19 +111,27 @@
     <section id="hero" class="d-flex align-items-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5"></div>
-          <div class="col-lg-7">
+          <div class="col-lg-6">
+            <img
+              src="./assets/images/copywriter_2.png"
+              alt="main banner graphic"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-6">
             <div class="form-container">
               <form>
                 <div class="row">
                   <div class="row">
                     <p
                       style="
-                        color: #2655a5;
+                        color: white;
                         font-family: 'Times New Roman', Times, serif;
                         font-family: 'Roboto', sans-serif;
-
-                        font-size: 20px;
+                        font-size: 22px;
+                        line-height: 1.4;
+                        letter-spacing: 1px;
+                        text-align: start;
                       "
                     >
                       <span
@@ -131,7 +141,8 @@
 
                       <span
                         style="
-                          color: #4caf50;
+                          color: #ffcc00;
+                          font-style: italic;
                           font-family: 'Montserrat', sans-serif;
                         "
                         >- Ensuring your success!</span
@@ -269,7 +280,7 @@
         <div class="row">
           <div class="col-lg-5">
             <img
-              src="./assets/images/aboutus1.png"
+              src="./assets/images/aboutus-team.png"
               style="max-width: 100%; height: auto; margin-right: 15px"
             />
           </div>
@@ -417,10 +428,10 @@
                 </div>
                 <div class="col-10">
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h5 class="card-title why-us-title">
                       24x7 Academic Writers’ Assistance
                     </h5>
-                    <p class="card-text">
+                    <p class="card-text why-us-text">
                       We provide around-the-clock support from our team of
                       academic writers, ensuring timely assistance whenever
                       needed.
@@ -428,12 +439,12 @@
                   </div>
                 </div>
               </div>
-              <div class="colored-strip"></div>
+              <!-- <div class="colored-strip"></div> -->
             </div>
           </div>
           <div class="col-12 col-md-6">
             <div class="card">
-              <div class="colored-strip"></div>
+              <!-- <div class="colored-strip"></div> -->
               <div class="row">
                 <div class="col-2">
                   <img
@@ -449,10 +460,10 @@
                 </div>
                 <div class="col-10">
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h5 class="card-title why-us-title">
                       Affordable Hiring Range for Assignment Helpers
                     </h5>
-                    <p class="card-text">
+                    <p class="card-text why-us-text">
                       We offer an affordable range for hiring assignment
                       helpers, making our services accessible to a wide range of
                       students.
@@ -464,7 +475,7 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="card">
-              <div class="colored-strip"></div>
+              <!-- <div class="colored-strip"></div> -->
               <div class="row">
                 <div class="col-2">
                   <img
@@ -480,10 +491,10 @@
                 </div>
                 <div class="col-10">
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h5 class="card-title why-us-title">
                       Experienced & Knowledgeable Assignment Writers
                     </h5>
-                    <p class="card-text">
+                    <p class="card-text why-us-text">
                       Our team consists of seasoned and knowledgeable assignment
                       writers, ensuring expertise in diverse subjects and
                       topics.
@@ -495,7 +506,7 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="card">
-              <div class="colored-strip"></div>
+              <!-- <div class="colored-strip"></div> -->
               <div class="row">
                 <div class="col-2">
                   <img
@@ -511,10 +522,10 @@
                 </div>
                 <div class="col-10">
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h5 class="card-title why-us-title">
                       A+ Quality and Plagiarism-Free Academic Papers
                     </h5>
-                    <p class="card-text">
+                    <p class="card-text why-us-text">
                       We are committed to delivering academic papers of A+
                       quality, crafted meticulously and free from plagiarism.
                     </p>
@@ -527,8 +538,12 @@
       </div>
     </section>
 
-    <section>
-      <div class="help-subjects-container mt-5" style="margin-top: 0px" id="Services">
+    <section class="services">
+      <div
+        class="help-subjects-container"
+        style="margin-top: 0px"
+        id="Services"
+      >
         <div class="text-help-subject">Services We Offer</div>
         <div class="row">
           <div class="col-12 col-md-4 col-sm-6">
@@ -657,7 +672,6 @@
                 src="./assets/logos/services/assessment-analysics-audit-control-review-concept.jpg"
                 class="card-img-top"
                 alt="Card Image"
-                
               />
               <div class="card-body">
                 <h4 class="card-title">Assessment Help</h4>
@@ -673,212 +687,227 @@
       </div>
     </section>
 
-          <!-- ======= Contact Section ======= -->
-          <section id="Contact" class="contact">
-            <div class="container" data-aos="fade-up">
-              <div class="section-title">
-                <div class="contact-us-heading">Get in Touch</div>
-                <p>
-                  We value your input and look forward to connecting with you. Feel free to reach out for any inquiries, feedback, or collaborations. Our team is here to assist you on your journey to success. 
-                </p>
+    <!-- ======= Contact Section ======= -->
+    <section id="Contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <div class="contact-us-heading">Get in Touch</div>
+          <p>
+            We value your input and look forward to connecting with you. Feel
+            free to reach out for any inquiries, feedback, or collaborations.
+            Our team is here to assist you on your journey to success.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Assignment Linkers</p>
               </div>
-    
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@assignmentlinkers.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 1234567890</p>
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?q=india&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                frameborder="0"
+                style="border: 0; width: 100%; height: 290px"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form
+              action="forms/contact.php"
+              method="post"
+              role="form"
+              class="php-email-form"
+            >
               <div class="row">
-                <div class="col-lg-5 d-flex align-items-stretch">
-                  <div class="info">
-                    <div class="address">
-                      <i class="bi bi-geo-alt"></i>
-                      <h4>Location:</h4>
-                      <p>Assignment Linkers</p>
-                    </div>
-    
-                    <div class="email">
-                      <i class="bi bi-envelope"></i>
-                      <h4>Email:</h4>
-                      <p>info@assignmentlinkers.com</p>
-                    </div>
-    
-                    <div class="phone">
-                      <i class="bi bi-phone"></i>
-                      <h4>Call:</h4>
-                      <p>+91 1234567890</p>
-                    </div>
-    
-                   
-                    <iframe
-                      src="https://www.google.com/maps/embed/v1/place?q=india&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-                      frameborder="0"
-                      style="border: 0; width: 100%; height: 290px"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    required
+                  />
                 </div>
-    
-                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                  <form
-                    action="forms/contact.php"
-                    method="post"
-                    role="form"
-                    class="php-email-form"
-                  >
-                    <div class="row">
-                      <div class="form-group col-md-6">
-                        <label for="name">Your Name</label>
-                        <input
-                          type="text"
-                          name="name"
-                          class="form-control"
-                          id="name"
-                          required
-                        />
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="name">Your Email</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          name="email"
-                          id="email"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="name">Subject</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="subject"
-                        id="subject"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="name">Message</label>
-                      <textarea
-                        class="form-control"
-                        name="message"
-                        rows="10"
-                        required
-                      ></textarea>
-                    </div>
-                   <!-- <div class="my-3">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+              <!-- <div class="my-3">
                       <div class="loading">Loading</div>
                       <div class="error-message"></div>
                       <div class="sent-message">
                         Your message has been sent. Thank you!
                       </div>
                     </div>-->
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-outline-success mt-5">Send Message</button>
-                    </div>
-                  </form>
-                </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-outline-success mt-5">
+                  Send Message
+                </button>
               </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>
+                <img
+                  src="./assets/images/assignment-linkers-logo.png"
+                  alt=""
+                  style="height: 100px"
+                />
+              </h3>
+              <p>
+                123 Main Street Cityville, State Country ZIP Code: 12345<br />
+                <strong>Phone:</strong> +91 1234567890<br />
+                <strong>Email:</strong> info@.com<br />
+              </p>
             </div>
-          </section>
-          <!-- End Contact Section -->
-        </main>
-        <!-- End #main -->
-    
-        <!-- ======= Footer ======= -->
-        <footer id="footer">
-          <div class="footer-top">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-3 col-md-6 footer-contact">
-                  <h3><img src="./assets/images/assignment-linkers-logo.png" alt="" style="height: 100px;"></h3>
-                  <p>
-                    123 Main Street
-                    Cityville, State
-                    Country
-                    ZIP Code: 12345<br/>                    
-                    <strong>Phone:</strong> +91 1234567890<br />
-                    <strong>Email:</strong> info@.com<br />
-                  </p>
-                </div>
-    
-                <div class="col-lg-3 col-md-6 footer-links">
-                  <h4>Useful Links</h4>
-                  <ul>
-                    <li>
-                      <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
-                    </li>
-                    <li>
-                      <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
-                    </li>
-                    <li>
-                      <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
-                    </li>
-                    <li>
-                      <i class="bx bx-chevron-right"></i>
-                      <a href="#">Terms of service</a>
-                    </li>
-                    <li>
-                      <i class="bx bx-chevron-right"></i>
-                      <a href="#">Privacy policy</a>
-                    </li>
-                  </ul>
-                </div>
-    
-                <div class="col-lg-3 col-md-6 footer-links">
-                  <h4>Our Services</h4>
-                  <ul>
-                    <li>
-                      <i class="bx bx-chevron-right"></i> <a href="#">Coursework Help</a>
-                    </li>
-                    <li>
-                      <i class="bx bx-chevron-right"></i>
-                      <a href="#">Essay Help</a>
-                    </li>
-                    <li>
-                      <i class="bx bx-chevron-right"></i>
-                      <a href="#">Thesis Help</a>
-                    </li>
-                    <li>
-                      <i class="bx bx-chevron-right"></i> <a href="#">Case Study Help</a>
-                    </li>
-                    <li>
-                      <i class="bx bx-chevron-right"></i>
-                      <a href="#">Referencing Style Help</a>
-                    </li>
-                  </ul>
-                </div>
-    
-                <div class="col-lg-3 col-md-6 footer-links">
-                  <h4>Our Social Networks</h4>
-                  <p>
-                    Follow us on social media to stay updated on the latest news, events, and exciting developments.
-                  </p>
-                  <div class="social-links mt-3">
-                    <a href="https://twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/" class="instagram"
-                      ><i class="bi bi-instagram"></i
-                    ></a>
-                    <a href="https://www.youtube.com/channel/" class="google-plus"><i class="bi bi-youtube"></i></a>
-                    <a href="https://www.pinterest.com/" class="linkedin"><i class="bi bi-pinterest"></i></a>
-                  </div>
-                </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Coursework Help</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Essay Help</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Thesis Help</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Case Study Help</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Referencing Style Help</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Follow us on social media to stay updated on the latest news,
+                events, and exciting developments.
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://twitter.com/" class="twitter"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="https://www.facebook.com/" class="facebook"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/" class="instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/channel/" class="google-plus"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+                <a href="https://www.pinterest.com/" class="linkedin"
+                  ><i class="bi bi-pinterest"></i
+                ></a>
               </div>
             </div>
           </div>
-    
-          <div class="container footer-bottom clearfix">
-            <div class="copyright">
-              &copy; Copyright <strong><span>Assignment Linkers</span></strong
-              >. All Rights Reserved
-            </div>
-            <div class="credits">
-              <!-- All the links in the footer should remain intact. -->
-              <!-- You can delete the links only if you purchased the pro version. -->
-              <!-- Licensing information: https://bootstrapmade.com/license/ -->
-              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-              Designed by <a href="https://ibharatmedia.com/">I Bharat Media</a>
-            </div>
-          </div>
-        </footer>
-        <!-- End Footer -->
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Assignment Linkers</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+          Designed by <a href="https://ibharatmedia.com/">I Bharat Media</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- ======= main Section end======= -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
